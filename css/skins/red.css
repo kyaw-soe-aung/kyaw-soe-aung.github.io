@@ -1,0 +1,29 @@
+/* =================================================================== */
+/* Red #ff5d56
+====================================================================== */
+
+.page-title h2 span:first-child::before,
+.page-title h2 span:nth-child(2),
+.bl-main>section.topleft .bl-box h3,
+.bl-main>section.topleft .bl-box .ah-headline.clip .ah-words-wrapper,
+.skills .resume-content i,
+.badges h3 span,
+.bl-main>section:nth-child(4).bl-expand .contact .leftside h6,
+.bl-main>section:nth-child(4).bl-expand .contact .rightside .input-field .prefix.active {
+	color:#ff5d56;
+}
+.personal-info a.btn,
+span.separator,
+.resume-list-item-inner,
+.carousel .indicators .indicator-item.active,
+#bl-work-items>div a div,
+div.bl-panel-items>div,
+.bl-main>section:nth-child(4).bl-expand .contact .rightside form button  {
+	background: #ff5d56;
+}
+.resume-card-name {
+	color: #ff5d56 !important;
+}
+.bl-main>section.topleft:before {
+	content:url('../../images/separators/red.png');
+}
