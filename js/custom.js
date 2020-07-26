@@ -32,8 +32,7 @@
 
         // AJAX CONTACT FORM
         $(".contactform").on("submit", function() {
-            $(".output_message").text("Loading...");
-
+            $(".output_message").text("Message Sent!");
             var form = $(this);
             $.ajax({
                 url: form.attr("action"),
