@@ -1,837 +1,1392 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Kyaw Soe Aung</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    
-    <!-- Template CSS Files -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" /> -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/jquery.animatedheadline.css" />
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/skins/yellow.css" />
-    
-    <!-- Live Style Switcher - demo only -->
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
-    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
-    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldrenrod.css" />
-    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
-    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
-    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
-    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
-    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
-    
-    <!-- Template JS Files -->
-    <script src="js/modernizr.custom.js"></script>
-    
+  <!-- Title of The Page -->
+  <title>Kyaw Soe Aung</title>
+  <!-- Meta Informations -->
+  <meta charset="utf-8">
+  <meta name="description" content="Bootstrap 5 Responsive Gaspar | Personal Portfolio HTML Template">
+  <meta name="keywords" content="Gaspar | Personal Portfolio HTML Template , template, bootstrap 5, ui template kit, Gaspar Personal Portfolio, html, css">
+  <meta name="author" content="Gaspar | Personal Portfolio HTML Template">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Favicon -->
+  <link type="image/x-icon" rel="shortcut icon" href="assets/images/logo/favicon.png" />
+  <!-- Font CSS -->
+  <link type="text/css" rel="stylesheet" href="assets/fonts/font.css" />
+  <!-- Font-Awesome All CSS -->
+  <link type="text/css" rel="stylesheet" href="assets/css/all.css" />
+  <!-- Bootstrap CSS -->
+  <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Owlcarousel CSS -->
+  <link type="text/css" rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <!-- Fancybox CSS -->
+  <link type="text/css" rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+  <!-- Animate CSS -->
+  <link type="text/css" rel="stylesheet" href="assets/css/animate.min.css" />
+  <!-- colors CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
+  <!-- Styles CSS -->
+  <link type="text/css" rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Live Style Switcher - demo only -->
+	<link id="style-switch" href="assets/css/colors/orange.css" media="screen" rel="stylesheet" type="text/css">
+  <!-- Responsive CSS -->
+  <link type="text/css" rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
-<body class="dark">
-    <!-- Preloader Start -->
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
+<body>
+  <!-- Body Part Start -->
+  <div class="gaspar" data-magic-cursor="show" data-color="crimson">
+    <!-- Pre-Loader Start-->
+    <div id="preloader">
+      <div class="loader_line"></div>
     </div>
-    <!-- Preloader Ends -->
-    <!-- Live Style Switcher Starts - demo only -->
-    <div id="switcher" class="">
-        <div class="content-switcher">
-            <!-- <h4>STYLE SWITCHER</h4>
-            <ul>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="images/styleswitcher/purple.png" alt="purple"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="images/styleswitcher/red.png" alt="red"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="images/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="images/styleswitcher/blue.png" alt="blue"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="images/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="images/styleswitcher/magenta.png" alt="magenta"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="images/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="images/styleswitcher/orange.png" alt="orange"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="images/styleswitcher/green.png" alt="green"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="images/styleswitcher/yellow.png" alt="yellow"/></a>
-                </li>
-            </ul> -->
-            <h4>BODY SKIN</h4>
-            
-            <label> <input class="dark_switch" type="radio" name="color_style" id="is_light" value="light" /> Light</label>
-            <label> <input class="dark_switch" type="radio" name="color_style" id="is_dark" value="dark" checked="checked" />  Dark</label><br>
-            
-            <div id="hideSwitcher">&times;</div>
+    <!-- Pre-Loader end -->
+    <!-- Style switcher start -->
+	<!-- <div class="style-switch-wrapper">
+		<div class="style-switch-button">
+			<i class="fa fa-cog" aria-hidden="true"></i>
+		</div>
+		<h4>Unlimited Colors</h4>
+    <ul class="">
+      <li id="preset1" class=""><img
+        src="assets/images/colors/orange.png" alt="orange" /></li>
+      <li id="preset2" class=""><img
+        src="assets/images/colors/purple.png" alt="purple" /></li>
+      <li id="preset3" class=""><img
+        src="assets/images/colors/red.png" alt="red" /></li>
+      <li id="preset4" class=""><img
+        src="assets/images/colors/violet.png" alt="violet" /></li>
+      <li id="preset5" class=""><img
+        src="assets/images/colors/blue.png" alt="blue" /></li>
+      <li id="preset6" class=""><img
+        src="assets/images/colors/golden.png" alt="golden" /></li>
+      <li id="preset7" class=""><img
+        src="assets/images/colors/magenta.png" alt="magenta" /></li>
+      <li id="preset8" class=""><img
+        src="assets/images/colors/yellowgreen.png" alt="yellowgreen" /></li>
+      <li id="preset9" class=""><img
+        src="assets/images/colors/green.png" alt="green" /></li>
+      <li id="preset10" class=""><img
+        src="assets/images/colors/yellow.png" alt="yellow" /></li>
+    </ul>
+    <h4>Light Mode</h4>
+        <div class="switch" id="switcherrr">
+          <a href="../Light/index.html"><i class="fas fa-sun open"></i></a>
         </div>
+        <h4 class="title">Magic Cursor</h4>
+        <ul class="cursor">
+          <li><a class="showme show" href="index.html#"></a></li>
+          <li><a class="hide" href="index.html#"><svg xmlns="http://www.w3.org/2000/svg" class="svg" id="Capa_1"
+                enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                >
+                <g>
+                  <path d="m451.002 183.574h29.997v84.853h-29.997z"
+                    transform="matrix(.707 -.707 .707 .707 -23.318 395.706)"></path>
+                  <path d="m271.002 3.574h29.997v84.853h-29.997z"
+                    transform="matrix(.707 -.707 .707 .707 51.241 215.706)"></path>
+                  <path d="m423.574 31.002h84.853v29.997h-84.853z"
+                    transform="matrix(.707 -.707 .707 .707 103.961 342.985)"></path>
+                  <path
+                    d="m42.422 512 150.458-150.458 42.114 125.464 152.988-362.988-362.988 152.988 125.464 42.114-150.458 150.458z">
+                  </path>
+                  <path d="m361 0h30v61h-30z"></path>
+                  <path d="m451 121h61v30h-61z"></path>
+                </g>
+              </svg></a></li>
+        </ul>
+        <a target="_blank" href="https://themeforest.net/item/gaspar-personal-portfolio-html-template/36192601"
+          class="purchse-btn"><i class="fa fa-shopping-cart"></i> Purchase</a>
+	</div> -->
+    <!-- Header-section Start-->
+    <div class="header-holder services-section text-center animate__animated animate__zoomIn">
+      <div class="navigation">
+        <ul class="nav">
+          <li class="list active">
+            <a href="index.html#home" class="active">
+              <span class="icon">
+                <i class="fas fa-house-user"></i>
+              </span>
+              <div class="social__tooltip social__tooltip-bottom">Home</div>
+            </a>
+          </li>
+          <li class="list">
+            <a href="index.html#about">
+              <span class="icon">
+                <i class="fas fa-user-alt"></i>
+              </span>
+              <div class="social__tooltip social__tooltip-bottom">About</div>
+            </a>
+          </li>
+          <li class="list">
+            <a href="index.html#portfolio">
+              <span class="icon">
+                <i class="fas fa-briefcase"></i>
+              </span>
+              <div class="social__tooltip social__tooltip-bottom">My Gallery</div>
+            </a>
+          </li>
+          <!-- <li class="list">
+            <a href="index.html#blog">
+              <span class="icon">
+                <i class="fas fa-blog"></i>
+              </span>
+              <div class="social__tooltip social__tooltip-bottom">Blog</div>
+            </a>
+          </li> -->
+          <li class="list">
+            <a href="index.html#contact">
+              <span class="icon">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <div class="social__tooltip social__tooltip-bottom">Contact</div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-    <!-- Live Style Switcher Ends - demo only -->
-    <!-- Wrapper Starts -->
-    <div class="wrapper">
-        <div id="bl-main" class="bl-main">
-            <!-- Top Left Section Starts -->
-            <section class="topleft woman">
-                <div class="bl-box row valign-wrapper">
-                    <div class="row valign-wrapper">
-                        <div class="title-heading">
-                            <div class="selector uppercase" id="selector">
-                                <h3 class="ah-headline p-none m-none">
-                                    <span class="font-weight-300">Hi There ! I'm</span>
-                                    <span class="ah-words-wrapper">
-                                        <b class="is-visible">Kyaw Soe Aung</b>
-                                        <b>a Software Engineer</b>
-                                        <!-- <b>Want To Hire My Team? Contact Us!</b> -->
-                                        <!-- <b>android developer</b> -->
-                                    </span>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Header-section End-->
+    <!-- section-part Start -->
+    <div class="container ">
+      <!-- Index-page Start -->
+      <section id="home" class="section active">
+        <div class="homecolor-box"></div>
+        <div class="common_bg animate__animated animate__zoomIn">
+          <div class="container m-auto">
+            <div class="row align-items-center">
+              <!-- Profile-Pic -->
+              <div class=" col-xl-5 col-lg-6 col-md-6 col-12">
+                <div class="home-profile animate__animated animate__fadeInLeft animate__delay-1s">
+                  <img src="assets/images/profile/me.jpg" alt="home-profile">
                 </div>
-            </section>
-            <!-- Top Left Section Ends -->
-            <!-- About Section Starts -->
-            <section>
-                <!-- About Title Starts -->
-                <div class="bl-box valign-wrapper">
-                    <div class="page-title center-align">
-                        <span class="title-bg">Resume</span>
-                        <h2 class="center-align">
-                            <span data-hover="About">About </span>
-                            <span data-hover="Me">Me</span>
-                        </h2>
-                    </div>
+              </div>
+              <!-- Profile-Pic End-->
+              <!-- Profile-Information -->
+              <div class="col-xl-7 col-lg-6 col-md-6 col-12">
+                <div class="home-content">
+                  <P class="common-desctiption animate__animated animate__fadeInDown animate__delay-1s">Get to know me
+                  </P>
+                  <h1 class="common-title animate__animated animate__fadeInDown animate__delay-1s">Kyaw Soe Aung</h1>
+                  <div class="animated-bar animate__animated animate__fadeInDown animate__delay-2s"></div>
+                  <div class="animated-text animate__animated animate__fadeInDown animate__delay-2s">
+                    <h3>Software Engineer</h3>
+                    <h3>Entrepreneur</h3>
+                    <h3>Director</h3>
+                  </div>
+                  <!-- Social media icons-->
+                  <div class="fixed-block animate__animated animate__jackInTheBox animate__delay-2-5s">
+                    <ul class="list-unstyled social-icons">
+                      <!-- <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li> -->
+                      <li><a href="https://www.facebook.com/kyaw.soeaung.1485/"><i class="fab fa-facebook-square "></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/kyaw-soe-aung-31305a15b/"><i class="fab fa-linkedin "></i></a></li>
+                      <li><a href="https://github.com/kyaw-soe-aung"><i class="fab fa-github-square "></i></a></li>
+                      <li><a href="https://www.instagram.com/kyawsoeaung1434/"><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                  </div>
+                  <p class="lorem-text animate__animated animate__zoomIn animate__delay-2-5s">
+                    A highly skilled and motivated computer science graduate with over five years of experience in Software Engineering seeking a challenging position in a fast-paced environment.
+                  </p>
+                  <div class="home-btn">
+                    <a href="index.html#about" data-section-index="1" class="clickbtn about-us animate__animated animate__fadeInTopRight animate__delay-3s">about me </a>
+                    <a href="index.html#contact" data-section-index="1" class="clickbtn hire-me animate__animated animate__fadeInTopLeft animate__delay-3s ">Contace me</a>
+                  </div>
                 </div>
-                <!-- About Title Ends -->
-                <!-- About Expanded Starts -->
-                <div class="bl-content">
-                    <!-- Main Heading Starts -->
-                    <div class="container page-title center-align">
-                        <h2 class="center-align">
-                            <span data-hover="About">About </span>
-                            <span data-hover="Me">Me</span>
-                        </h2>
-                        <span class="title-bg">Resume</span>
-                    </div>
-                    <!-- Main Heading Ends -->
-                    <div class="container infos">
-                        <!-- Divider Starts -->
-                        <div class="divider center-align">
-                            <span class="outer-line"></span>
-                            <span class="fa fa-vcard" aria-hidden="true"></span>
-                            <span class="outer-line"></span>
-                        </div>
-                        <!-- Divider Ends -->
-                        <!-- Personal Informations Starts -->
-                        <div class="row">
-                            <!-- Picture Starts -->
-                            <div class="col s12 m5 l4 xl3 profile-picture">
-                                <img src="images/ksa.jpg" class="responsive-img my-picture" alt="My Photo" />
-                            </div>
-                            <!-- Picture Ends -->
-                            <div class="col s12 m7 l8 xl9 personal-info">
-                                <h6 class="uppercase"><i class="fa fa-user"></i> Personal Informations</h6>
-                                <div class="col m12 l7 xl7 p-none">
-                                    <p class="second-font">I'm a Freelance Web Designer & Developer based in Yangon, Myanmar.<br>
-                                        I have serious passion for UI effects, animations and creating intuitive, 
-                                        with over a four year of experience.
-                                    </p>
-                                </div>
-                                <div class="col s12 m12 l6 p-none">
-                                    <ul class="second-font list-1">
-                                        <li><span class="font-weight-600">First Name: </span>Kyaw Soe</li>
-                                        <li><span class="font-weight-600">Last Name: </span>Aung</li>
-                                        <li><span class="font-weight-600">Date of birth: </span>8 Sept 1997 </li>
-                                        <li><span class="font-weight-600">Nationality: </span>Myanmar</li>
-                                        <li><span class="font-weight-600">Freelance: </span>Available</li>
-                                    </ul>
-                                </div>
-                                <div class="col s12 m12 l6 p-none">
-                                    <ul class="second-font list-2">
-                                        <li><span class="font-weight-600">Phone: </span>+95 9967696966</li>
-                                        <li><span class="font-weight-600">Address: </span>Yangon, Myanmar</li>
-                                        <li><span class="font-weight-600">Email: </span>kyawsoeaung@ucsy.edu.mm</li>
-                                        <li><span class="font-weight-600">Spoken Langages: </span>English</li>
-                                        <li><span class="font-weight-600">Facebook </span>Kyaw Soe Aung</li>
-                                    </ul>
-                                </div>
-                                <!-- <a href="https://drive.google.com/uc?authuser=0&id=1UQ40w7msvx7vLycbPXcrCDDmFxI1oLDB&export=download" class="col s12 m12 l4 xl4 waves-effect waves-light btn font-weight-500">
-                                    Download Resume <i class="fa fa-file-pdf-o"></i>
-                                </a> -->
-                            </div>
-                        </div>
-                        <!-- Personal Informations Ends -->
-                    </div>
-                    <!-- Resume Starts -->
-                    <div class="resume-container">
-                        <div class="container">
-                            <div class="valign-wrapper row">
-                                <!-- Resume Menu Starts -->
-                                <div class="resume-list col l4">
-                                    <div class="resume-list-item is-active" data-index="0" id="resume-list-item-0">
-                                        <div class="resume-list-item-inner">
-                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-briefcase"></i> Experience</h6>
-                                        </div>
-                                    </div>
-                                    <div class="resume-list-item" data-index="1" id="resume-list-item-1">
-                                        <div class="resume-list-item-inner">
-                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-graduation-cap"></i> Education</h6>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="resume-list-item" data-index="2" id="resume-list-item-2">
-                                        <div class="resume-list-item-inner">
-                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-star"></i> Skills</h6>
-                                        </div>
-                                    </div> -->
-                                </div>
-                                <!-- Resume Menu Ends -->
-                                <!-- Resume Content Starts -->
-                                <div class="col s12 m12 l8 resume-cards-container">
-                                    <div class="resume-cards">
-                                        <!-- Experience Starts -->
-                                        <div class="resume-card resume-card-0" data-index="0">
-                                            <!-- Experience Header Title Starts -->
-                                            <div class="resume-card-header">
-                                                <div class="resume-card-name"><i class="fa fa-briefcase"></i> Experience</div>
-                                            </div>
-                                            <!-- Experience Header Title Ends -->
-                                            <!-- Experience Content Starts -->
-                                            <div class="resume-card-body experience">
-                                                <div class="resume-card-body-container second-font">
-                                                    <!-- Single Experience Starts -->
-                                                    <div class="resume-content">
-                                                        <h6 class="uppercase"><span>Web Developer - </span>M2CS</h6>
-                                                        <span class="date"><i class="fa fa-calendar-o"></i> 2015 - 2020</span>
-                                                        <p>M2CS is a computer organization which help community technically.</p>
-                                                    </div>
-                                                    <span class="separator"></span>
-                                                    <div class="resume-content">
-                                                        <h6 class="uppercase"><span>Web Developer - </span>MMDS</h6>
-                                                        <span class="date"><i class="fa fa-calendar-o"></i> 2020 - present</span>
-                                                        <p> Work at Myanmar Digital Solutions Company.</p>
-                                                    </div>
-                                                    <!-- Single Experience Ends -->
-                                                    <span class="separator"></span>
-                                                    <!-- Single Experience Starts -->
-                                                    <div class="resume-content">
-                                                        <h6 class="uppercase"><span>Founder- </span>M2CS</h6>
-                                                        <!-- <span class="date"><i class="fa fa-calendar-o"></i> 2018 - 20..</span> -->
-                                                        <p>Myanmar Muslim Computer Student Organization.</p>
-                                                    </div>
-                                                    <!-- Single Experience Ends -->
-                                                </div>
-                                            </div>
-                                            <!-- Experience Content Starts -->
-                                        </div>
-                                        <!-- Experience Ends -->
-                                        <!-- Education Starts -->
-                                        <div class="resume-card resume-card-1" data-index="1">
-                                            <!-- Education Header Title Starts -->
-                                            <div class="resume-card-header">
-                                                <div class="resume-card-name"><i class="fa fa-graduation-cap"></i> Education</div>
-                                            </div>
-                                            <!-- Education Header Title Starts -->
-                                            <div class="resume-card-body education">
-                                                <div class="resume-card-body-container second-font">
-                                                    <!-- Single Education Starts -->
-                                                    <!-- <div class="resume-content">
-                                                        <h6 class="uppercase"><span>Leadership Diploma - </span>Strategy Fisrt</h6>
-                                                        <span class="date"><i class="fa fa-calendar-o"></i> 2015- 2016</span>
-                                                        <p>Excellent experience there</p>
-                                                    </div> -->
-                                                    <!-- Single Education Ends -->
-                                                    <!-- <span class="separator"></span> -->
-                                                    <!-- Single Education Starts -->
-                                                    <!-- <div class="resume-content">
-                                                        <h6 class="uppercase"><span>Masters Degree - </span>Not attend Yet</h6>
-                                                        <span class="date"><i class="fa fa-calendar-o"></i> </span>
-                                                        <p>Not attend Yet but of course in the near future</p>
-                                                    </div> -->
-                                                    <!-- Single Education Ends -->
-                                                    <span class="separator"></span>
-                                                    <!-- Single Education Starts -->
-                                                    <div class="resume-content">
-                                                        <h6 class="uppercase"><span>Bachelor Degree - </span>University Of Computer Studies Yangon</h6>
-                                                        <span class="date"><i class="fa fa-calendar-o"></i> 2015 - 2020</span>
-                                                        <p>My best valueable time was spent there which are left as a best memorial days in my life</p>
-                                                    </div>
-                                                    <!-- Single Education Ends -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Education Ends -->
-                                        <!-- Skills Starts -->
-                                        <!-- <div class="resume-card resume-card-2" data-index="2">
-                                            <div class="resume-card-header">
-                                                <div class="resume-card-name"><i class="fa fa-star"></i> Skills</div>
-                                            </div>
-                                            <div class="resume-card-body skills">
-                                                <div class="resume-card-body-container second-font">
-                                                    <div class="row">
-                                                        <div class="col s6">
-                                                            <div class="resume-content">
-                                                                <h6 class="uppercase">html</h6>
-                                                                <p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
-                                                            </div>
-                                                            <div class="resume-content">
-                                                                <h6 class="uppercase">javascript</h6>
-                                                                <p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
-                                                            </div>
-                                                            <div class="resume-content">
-                                                                <h6 class="uppercase">css</h6>
-                                                                <p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
-                                                            </div>
-                                                            <div class="resume-content">
-                                                                <h6 class="uppercase">php</h6>
-                                                                <p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </p>
-                                                            </div>
-                                                            <div class="resume-content">
-                                                                <h6 class="uppercase">jquery</h6>
-                                                                <p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col s6">
-                                                            <div class="resume-content">
-                                                                <h6 class="uppercase">wordpress</h6>
-                                                                <p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
-                                                            </div>
-                                                            <div class="resume-content">
-                                                                <h6 class="uppercase">Laravel</h6>
-                                                                <p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></i></p>
-                                                            </div>
-                                                            <div class="resume-content">
-                                                                <h6 class="uppercase">Vue Js</h6>
-                                                                <p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></i></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <!-- Resume Content Ends -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Resume Ends -->
-                    <!-- Fun Facts Starts -->
-                    <div class="container badges">
-                        <div class="row">
-                            <!-- Fact Badge Item Starts -->
-                            <div class="col s12 m4 l4 center-align">
-                                <h3>
-                                    <i class="fa fa-suitcase"></i>
-                                    <span class="font-weight-700">4+</span>
-                                </h3>
-                                <h6 class="uppercase font-weight-500">Years Experience</h6>
-                            </div>
-                            <!-- Fact Badge Item Ends -->
-                            <!-- Fact Badge Item Starts -->
-                            <div class="col s12 m4 l4 center-align">
-                                <h3>
-                                    <i class="fa fa-check-square"></i>
-                                    <span class="font-weight-700">9+</span>
-                                </h3>
-                                <h6 class="uppercase font-weight-500">Done Projects</h6>
-                            </div>
-                            <!-- Fact Badge Item Ends -->
-                            <!-- Fact Badge Item Starts -->
-                            <div class="col s12 m4 l4 center-align">
-                                <h3>
-                                    <i class="fa fa-heart"></i>
-                                    <span class="font-weight-700">15+</span>
-                                </h3>
-                                <h6 class="uppercase font-weight-500">Happy customers</h6>
-                            </div>
-                            <!-- Fact Badge Item Ends -->
-                        </div>
-                    </div>
-                    <!-- Fun Facts Ends -->
-                </div>
-                <!-- End Expanded About -->
-                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
-            </section>
-            <!-- About Ends -->
-            <!-- Portfolio Starts -->
-            <section id="bl-work-section">
-                <!-- Portfolio Title Starts -->
-                <div class="bl-box valign-wrapper">
-                    <div class="page-title center-align">
-                        <span class="title-bg">works</span>
-                        <h2 class="center-align">
-                            <span data-hover="my">my </span>
-                            <span data-hover="portfolio">My Gallery</span>
-                        </h2>
-                    </div>
-                </div>
-                <!-- Portfolio Title Ends -->
-                <!-- Portfolio Expanded Starts -->
-                <div class="bl-content">
-                    <!-- Main Heading Starts -->
-                    <div class="container page-title center-align">
-                        <h2 class="center-align">
-                            <span data-hover="my">my </span>
-                            <span data-hover="portfolio">Gallery</span>
-                        </h2>
-                        <span class="title-bg">gallery</span>
-                    </div>
-                    <!-- Main Heading Ends -->
-                    <div class="container">
-                        <!-- Divider Starts -->
-                        <div class="divider center-align">
-                            <span class="outer-line"></span>
-                            <span class="fa fa-suitcase" aria-hidden="true"></span>
-                            <span class="outer-line"></span>
-                        </div>
-                        <!-- Divider Ends -->
-                        <div class="row center-align da-thumbs" id="bl-work-items">
-                            <!-- Project Starts -->
-                            <div class="col s12 m6 l3 xl3" data-panel="panel-1">
-                                <a href="#">
-                                    <img class="responsive-img" src="images/projects/portal.jpg" alt="Project" />
-                                    <div class="valign-wrapper"><span class="font-weight-400 uppercase">Portal Project</span></div>
-                                </a>
-                            </div>
-                            <!-- Project Ends -->
-                            <!-- Project Starts -->
-                            <div class="col s12 m6 l3 xl3" data-panel="panel-2">
-                                <a href="#">
-                                    <img class="responsive-img" src="images/projects/project-1.jpg" alt="Project" />
-                                    <div class="valign-wrapper"><span class="font-weight-400 uppercase">FinLit Hackathon 2019</span></div>
-                                </a>
-                            </div>
-
-                            <div class="col s12 m6 l3 xl3" data-panel="panel-3">
-                                <a href="">
-                                    <img class="responsive-img" src="images/welcome1.jpeg" alt="Project" />
-                                    <div class="valign-wrapper"><span class="font-weight-400 uppercase">M-UCSY Fresher Welcome</span></div>
-                                </a>
-                            </div>
-                            
-                            <!-- Project Ends -->
-                            <!-- Project Starts -->
-                            <!-- <div class="col s12 m6 l3 xl3" data-panel="panel-3">
-                                <a href="#">
-                                    <img class="responsive-img" src="images/projects/project-3.jpg" alt="Project" />
-                                    <div class="valign-wrapper"><span class="font-weight-400 uppercase">Youtube Video</span></div>
-                                </a>
-                            </div> -->
-                            <!-- Project Ends -->
-                            <!-- Project Starts -->
-                            <!-- <div class="col s12 m6 l3 xl3" data-panel="panel-4">
-                                <a href="#">
-                                    <img class="responsive-img" src="images/projects/project-4.jpg" alt="Project" />
-                                    <div class="valign-wrapper"><span class="font-weight-400 uppercase">Local Video</span></div>
-                                </a>
-                            </div> -->
-                            <!-- Project Ends -->
-                            <!-- Project Starts -->
-                            <!-- <div class="col s12 m6 l3 xl3" data-panel="panel-5">
-                                <a href="#">
-                                    <img class="responsive-img" src="images/projects/project-5.jpg" alt="Project" />
-                                    <div class="valign-wrapper"><span class="font-weight-400 uppercase">Image Project</span></div>
-                                </a>
-                            </div> -->
-                            <!-- Project Ends -->
-                            <!-- Project Starts -->
-                            <!-- <div class="col s12 m6 l3 xl3" data-panel="panel-6">
-                                <a href="#">
-                                    <img class="responsive-img" src="images/projects/project-6.jpg" alt="Project" />
-                                    <div class="valign-wrapper"><span class="font-weight-400 uppercase">Image Project</span></div>
-                                </a>
-                            </div> -->
-                            <!-- Project Ends -->
-                            <!-- Project Starts -->
-                            <!-- <div class="col s12 m6 l3 xl3" data-panel="panel-7">
-                                <a href="#">
-                                    <img class="responsive-img" src="images/projects/project-7.jpg" alt="Project" />
-                                    <div class="valign-wrapper"><span class="font-weight-400 uppercase">Image Project</span></div>
-                                </a>
-                            </div> -->
-                            <!-- Project Ends -->
-                            <!-- Project Starts -->
-                            <!-- <div class="col s12 m6 l3 xl3" data-panel="panel-8">
-                                <a href="#">
-                                    <img class="responsive-img" src="images/projects/project-8.jpg" alt="Project" />
-                                    <div class="valign-wrapper"><span class="font-weight-400 uppercase">Image Project</span></div>
-                                </a>
-                            </div> -->
-                            <!-- Project Ends -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio Expanded Ends -->
-                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
-            </section>
-            <!-- Portfolio Section Ends -->
-            <!-- Contact Section Starts -->
-            <section>
-                <!-- Contact Title Starts -->
-                <div class="bl-box valign-wrapper">
-                    <div class="page-title center-align">
-                        <span class="title-bg">Contact</span>
-                        <h2 class="center-align">
-                            <span data-hover="get">get </span>
-                            <span data-hover="in touch">in touch</span>
-                        </h2>
-                    </div>
-                </div>
-                <!-- Contact Title Ends -->
-                <!-- Expanded Contact Starts -->
-                <div class="bl-content">
-                    <!-- Main Heading Starts -->
-                    <div class="container page-title center-align">
-                        <h2 class="center-align">
-                            <span data-hover="get">get </span>
-                            <span data-hover="in touch">in touch</span>
-                        </h2>
-                        <span class="title-bg">Contact</span>
-                    </div>
-                    <!-- Main Heading Ends -->
-                    <div class="container">
-                        <!-- Divider Starts -->
-                        <div class="divider center-align">
-                            <span class="outer-line"></span>
-                            <span class="fa fa-envelope-open" aria-hidden="true"></span>
-                            <span class="outer-line"></span>
-                        </div>
-                        <!-- Divider Ends -->
-                        <div class="row contact">
-                            <!-- Contact Infos Starts -->
-                            <div class="col s12 m5 l3 xl3 leftside">
-                                <!-- Contacts Starts -->
-                                <h6 class="font-weight-500 uppercase">Phone</h6>
-                                <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> +95 9967696966</span>
-                                <h6 class="font-weight-500 uppercase">Email</h6>
-                                <span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> kyawsoeaung@ucsy.edu.mm</span>
-                                <h6 class="font-weight-500 uppercase">Address</h6>
-                                <span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Yangon, Myanmar</span><br>
-                                <span class="font-weight-400 second-font"></span>
-                                <!-- Contacts Ends -->
-                                <!-- Social Media Profiles Starts -->
-                                <h6 class="font-weight-500 uppercase">Social Profiles</h6>
-                                <div class="social">
-                                    <ul class="list-inline social social-intro center-align p-none">
-                                        <li class="facebook"><a href="https://www.facebook.com/kyaw.soeaung.1485"><i class="fa fa-facebook"></i></a></li>
-                                        <!-- <li class="twitter"><a href="https://twitter.com/Kyawsoeaung1434"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
-                                        <li class="linkedin"><a href="https://www.linkedin.com/in/kyaw-soe-aung-31305a15b/"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                                <!-- Social Media Profiles Ends -->
-                            </div>
-                            <!-- Contact Infos Ends -->
-                            <!-- Contact Form Starts -->
-                            <div class="col s12 m7 l9 xl9 rightside">
-                                <h6 class="uppercase m-none">Feel free to drop me a line</h6>
-                                <div class="row">
-                                    <p class="col s12 m12 l7 xl7 second-font">
-                                        If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.
-                                    </p>
-                                </div>
-                                <form class="contactform" method="POST" action="https://formspree.io/mqkydepd">
-                                    <!-- Name Field Starts -->
-                                    <div class="input-field second-font">
-                                        <i class="fa fa-user prefix"></i>
-                                        <input id="name" name="name" type="text" class="validate" required>
-                                        <label class="font-weight-400" for="name">Your Name</label>
-                                    </div>
-                                    <!-- Name Field Ends -->
-                                    <!-- Email Field Starts -->
-                                    <div class="input-field second-font">
-                                        <i class="fa fa-envelope prefix"></i>
-                                        <input id="email" type="email" name="_replyto" class="validate" required>
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                    <!-- Email Field Ends -->
-                                    <!-- Start Message Textarea Starts -->
-                                    <div class="input-field second-font">
-                                        <i class="fa fa-comments prefix"></i>
-                                        <textarea id="message" name="message" class="materialize-textarea" required></textarea>
-                                        <label for="message">Your message</label>
-                                    </div>
-                                    <!-- Message Textarea Ends -->
-                                    <!-- Submit Form Button Starts -->
-                                    <div class="col s12 m12 l4 xl4">
-                                        <button class="btn font-weight-500" type="submit" name="send">
-                                            Send Message<i class="fa fa-send"></i>
-                                        </button>
-                                    </div>
-                                    <!-- Submit Form Button Ends -->
-                                    <div class="col s12 m12 l8 xl8 form-message">
-                                        <span class="output_message center-align font-weight-500 uppercase"></span>
-                                    </div>
-                                </form>
-                            </div>
-                            <!-- Contact Form Ends -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Expanded Contact Ends -->
-                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
-            </section>
-            <!-- Contact Section Ends -->
-            <!-- Portfolio Panel Items Starts -->
-            <div class="bl-panel-items" id="bl-panel-work-items">
-                <!-- Project Starts -->
-                <div data-panel="panel-1">
-                    <div class="row">
-                        <!-- Project Main Content Starts -->
-                        <div class="col s12 l6 xl6">
-                            <img class="responsive-img" src="images/projects/portal.jpg" alt="project" />
-                        </div>
-                        <!-- Project Main Content Ends -->
-                        <!-- Project Details Starts -->
-                        <div class="col s12 l6 xl6">
-                            <h3 class="font-weight-600 white-text uppercase">Portal Project</h3>
-                            <ul class="project-details white-text second-font">
-                                <li><i class="fa fa-user"></i><span class="font-weight-600"> Client </span>: <span class="font-weight-400 uppercase">For Product Show</span></li>
-                                <li><i class="fa fa-calendar"></i><span class="font-weight-600"> Date </span>: <span class="font-weight-400 uppercase">14/8/2019</span></li>
-                                <li><i class="fa fa-cogs"></i> <span class="font-weight-600"> Used Technologies</span> : <span class="font-weight-400 uppercase">javascript, html, css, NodeJs,Android Development</span></li>
-                            </ul>
-                            <hr>
-                            <p class="white-text second-font">This project for management of of Class with suitable features</p>
-                            <a href="#" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
-                        </div>
-                        <!-- Project Details Ends -->
-                    </div>
-                </div>
-                <!-- Project Ends -->
-                <!-- Project Starts -->
-                <div data-panel="panel-2">
-                    <div class="row">
-                        <!-- Project Main Content Starts -->
-                        <div class="col s12 l6 xl6">
-                            <div class="carousel carousel-slider">
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/projects/hackthon19-1.jpg" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/projects/hackthon19-2.jpg" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/projects/hackthon19-3.jpg" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/projects/hackthon19-4.jpg" alt="project" ></a>
-                            </div>
-                        </div>
-                        <div class="col s12 l6 xl6">
-                            <h3 class="font-weight-600 white-text uppercase">FINLIT HACKATHON 2019</h3>
-                            <ul class="project-details white-text second-font">
-                                <li><i class="fa fa-user"></i><span class="font-weight-600"> Team </span>: <span class="font-weight-400 uppercase">Tripple Dot</span></li>
-                                <li><i class="fa fa-calendar"></i><span class="font-weight-600"> Date </span>: <span class="font-weight-400 uppercase">10/5/2019</span></li>
-                                <li><i class="fa fa-cogs"></i> <span class="font-weight-600"> Used Technologies</span> : <span class="font-weight-400 uppercase">Website and Android</span></li>
-                            </ul>
-                            <hr>
-                            <p class="white-text second-font">Participate Hackathon 2019</p>
-                        </div>
-                        <!-- Project Details Ends -->
-                    </div>
-                </div>
-                <!-- Project Ends -->
-                <div data-panel="panel-3">
-                    <div class="row">
-                        <!-- Project Main Content Starts -->
-                        <div class="col s12 l6 xl6">
-                            <div class="carousel carousel-slider">
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/welcome2.jpeg" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/welcome4.jpg" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/welcom3.jpg" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/welcome5.JPG" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/welcome6.JPG" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/welcome7.JPG" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/welcome8.JPG" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/welcome10.JPG" alt="project" ></a>
-                                <a class="carousel-item" href="#"><img class="responsive-img" src="images/welcome9.JPG" alt="project" ></a>
-                            </div>
-                        </div>
-                        <div class="col s12 l6 xl6">
-                            <h3 class="font-weight-600 white-text uppercase">M-USCY Fresher Welcome 2019</h3>
-                            <ul class="project-details white-text second-font">
-                                <li><i class="fa fa-user"></i><span class="font-weight-600"> Team </span>: <span class="font-weight-400 uppercase">M2CS</span></li>
-                                <li><i class="fa fa-calendar"></i><span class="font-weight-600"> Date </span>: <span class="font-weight-400 uppercase">1/10/2019</span></li>
-                                <!-- <li><i class="fa fa-cogs"></i> <span class="font-weight-600"> Used Technologies</span> : <span class="font-weight-400 uppercase">Website and Android</span></li> -->
-                            </ul>
-                            <hr>
-                            <p class="white-text second-font">Awesome Event!!</p>
-                        </div>
-                        <!-- Project Details Ends -->
-                    </div>
-                </div>
-                
-                <!-- Project Starts -->
-                <!-- <div data-panel="panel-3">
-                    <div class="row">
-                        <div class="col s12 l6 xl6">
-                            <div class="videocontainer">
-                                <iframe class="youtube-video" src="https://www.youtube.com/embed/7e90gBu4pas?enablejsapi=1&version=3&playerapiid=ytplayer" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="col s12 l6 xl6">
-                            <h3 class="font-weight-600 white-text uppercase">Youtube Video</h3>
-                            <ul class="project-details white-text second-font">
-                                <li><i class="fa fa-user"></i><span class="font-weight-600"> Client </span>: <span class="font-weight-400 uppercase">Photodune</span></li>
-                                <li><i class="fa fa-calendar"></i><span class="font-weight-600"> Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
-                                <li><i class="fa fa-cogs"></i> <span class="font-weight-600"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe After Effects, Adobe Audition</span></li>
-                            </ul>
-                            <hr>
-                            <p class="white-text second-font">Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar fap bushwick bespoke.</p>
-                            <a href="#" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- Project Ends -->
-                <!-- Project Starts -->
-                
-                <!-- <div data-panel="panel-4">
-                    <div class="row">
-                        <div class="col s12 l6 xl6">
-                            <video id="video" class="responsive-video" controls poster="images/projects/video/video-poster.png">
-                                <source src="http://celtano.top/lina/demos/images/projects/video/video.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="col s12 l6 xl6">
-                                <h3 class="font-weight-600 white-text uppercase">Local Video</h3>
-                                <ul class="project-details white-text second-font">
-                                    <li><i class="fa fa-user"></i><span class="font-weight-600"> Client </span>: <span class="font-weight-400 uppercase">Videohive</span></li>
-                                    <li><i class="fa fa-calendar"></i><span class="font-weight-600"> Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
-                                    <li><i class="fa fa-cogs"></i> <span class="font-weight-600"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe After Effects, Movie Maker</span></li>
-                                </ul>
-                                <hr>
-                                <p class="white-text second-font">Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar fap bushwick bespoke.</p>
-                                <a href="#" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Project Ends -->
-                    <!-- Project Starts -->
-                    <!-- <div data-panel="panel-5">
-                        <div class="row">
-                            <div class="col s12 l6 xl6">
-                                <img src="images/projects/project-5.jpg" alt="project" />
-                            </div>
-                            <div class="col s12 l6 xl6">
-                                <h3 class="font-weight-600 white-text uppercase">Image Project</h3>
-                                <ul class="project-details white-text second-font">
-                                    <li><i class="fa fa-user"></i><span class="font-weight-600"> Client </span>: <span class="font-weight-400 uppercase">Graphicriver</span></li>
-                                    <li><i class="fa fa-calendar"></i><span class="font-weight-600"> Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
-                                    <li><i class="fa fa-cogs"></i> <span class="font-weight-600"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe Photoshop, Gimp</span></li>
-                                </ul>
-                                <hr>
-                                <p class="white-text second-font">Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar fap bushwick bespoke.</p>
-                                <a href="#" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Project Ends -->
-                    <!-- Project Starts -->
-                    <!-- <div data-panel="panel-6">
-                        <div class="row">
-                            <div class="col s12 l6 xl6">
-                                <img src="images/projects/project-6.jpg" alt="project" />
-                            </div>
-                            <div class="col s12 l6 xl6">
-                                <h3 class="font-weight-600 white-text uppercase">Image Project</h3>
-                                <ul class="project-details white-text second-font">
-                                    <li><i class="fa fa-user"></i><span class="font-weight-600"> Client </span>: <span class="font-weight-400 uppercase">Activeden</span></li>
-                                    <li><i class="fa fa-calendar"></i><span class="font-weight-600"> Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
-                                    <li><i class="fa fa-cogs"></i> <span class="font-weight-600"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe Flash, Paint</span></li>
-                                </ul>
-                                <hr>
-                                <p class="white-text second-font">Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar fap bushwick bespoke.</p>
-                                <a href="#" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Project Ends -->
-                    <!-- Project Starts -->
-                    <!-- <div data-panel="panel-7">
-                        <div class="row">
-                            <div class="col s12 l6 xl6">
-                                <img src="images/projects/project-7.jpg" alt="project" />
-                            </div>
-                            <div class="col s12 l6 xl6">
-                                <h3 class="font-weight-600 white-text uppercase">Image Project</h3>
-                                <ul class="project-details white-text second-font">
-                                    <li><i class="fa fa-user"></i><span class="font-weight-600"> Client </span>: <span class="font-weight-400 uppercase">3D Ocean</span></li>
-                                    <li><i class="fa fa-calendar"></i><span class="font-weight-600"> Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
-                                    <li><i class="fa fa-cogs"></i> <span class="font-weight-600"> Used Technologies</span> : <span class="font-weight-400 uppercase">3DS Max, Adobe Photoshop</span></li>
-                                </ul>
-                                <hr>
-                                <p class="white-text second-font">Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar fap bushwick bespoke.</p>
-                                <a href="#" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Project Ends -->
-                    <!-- Project Starts -->
-                    <!-- <div data-panel="panel-8">
-                        <div class="row">
-                            <div class="col s12 l6 xl6">
-                                <img src="images/projects/project-8.jpg" alt="project" />
-                            </div>
-                            <div class="col s12 l6 xl6">
-                                <h3 class="font-weight-600 white-text uppercase">Image Project</h3>
-                                <ul class="project-details white-text second-font">
-                                    <li><i class="fa fa-user"></i><span class="font-weight-600"> Client </span>: <span class="font-weight-400 uppercase">Audiojungle</span></li>
-                                    <li><i class="fa fa-calendar"></i><span class="font-weight-600"> Date </span>: <span class="font-weight-400 uppercase">02/11/2017</span></li>
-                                    <li><i class="fa fa-cogs"></i> <span class="font-weight-600"> Used Technologies</span> : <span class="font-weight-400 uppercase">Adobe Audition, Adobe Premiere</span></li>
-                                </ul>
-                                <hr>
-                                <p class="white-text second-font">Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar fap bushwick bespoke.</p>
-                                <a href="#" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Project Ends -->
-                    <!-- Portfolio Navigation Starts -->
-                    <nav>
-                        <!-- Previous Work Icon Starts -->
-                        <span class="control-button bl-previous-work uppercase font-weight-700"><i class="fa fa-chevron-left"></i></span>
-                        <!-- Previous Work Icon Ends -->
-                        <!-- Close Work Icon Starts -->
-                        <span class="control-button fa fa-close fa-2x bl-icon-close center-align" id="bl-icon-close"></span>
-                        <!-- Close Work Icon Ends -->
-                        <!-- Next Work Icon Starts -->
-                        <span class="control-button bl-next-work uppercase font-weight-700"><i class="fa fa-chevron-right"></i></span>
-                        <!-- Previous Work Icon Ends -->
-                    </nav>
-                    <!-- Portfolio Navigation Ends -->
-                </div>
-                <!-- Portfolio Panel Items Ends -->
+              </div>
+              <!-- Profile-Information End -->
             </div>
+          </div>
         </div>
-        <!-- Wrapper Ends -->
-        
-        <!-- Template JS Files -->
-        <script src="js/jquery-2.2.4.min.js"></script>
-        <script src="js/jquery.animatedheadline.js"></script>
-        <script src="js/boxlayout.js"></script>
-        <script src="js/materialize.min.js"></script>
-        <script src="js/jquery.hoverdir.js"></script>
-        <script src="js/custom.js"></script>
-        
-        <!-- Live Style Switcher JS File - only demo -->
-        <script src="js/styleswitcher.js"></script>
-    </body>
-    
-    </html>
-    
+      </section>
+      <!-- Index-page End -->
+
+      <!-- About Section Start -->
+      <section id="about" class="section ">
+        <div class="homecolor-box"></div>
+        <div class="common_bg animate__animated animate__fadeInDown">
+          <div class="container">
+            <div class="about-content">
+              <!-- About Title Start-->
+              <div class="row ">
+                <div class="col-12 ">
+                  <div class="section-title animate__animated animate__fadeInDown animate__delay-1s">
+                    <P class="common-desctiption">my intro</P>
+                    <h1 class="common-title">About <span>Me</span></h1>
+                    <div class="animated-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- About Title End -->
+              <!-- About-Me -->
+              <div class="row single-section">
+                <div class="col-lg-4 profile-photo animate__animated animate__fadeInLeft animate__delay-2s ">
+                  <div class="row">
+                    <div class="col-12 d-block col-sm-none">
+                      <img src="assets/images/profile/me.jpg" class="img-fluid main-img-mobile" alt="my picture">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                  <div class="row personal-info animate__animated animate__fadeInRight animate__delay-2s">
+
+                    <div class="col-12">
+                      <h5 class="personal-title">who am <span>i ?</span></h5>
+                      <h3 class="personal-title">I'm Kyaw Soe Aung, a  <span>Software Engineer</span> and <span>an
+                        Entrepreneur</span></h3>
+                      <div class="col-12">
+                        <p class="info">
+                          To leverage my experience in software engineering and business management to contribute to a dynamic organization that values innovation and creativity.
+                        </p>
+                        
+                        <!-- <p class="info">
+                            As a computer science graduate with a strong background in software engineering and a passion for entrepreneurship, I am eager to start my own company in the fashion industry. With over five years of experience in the web development industry and a proven track record as a director at The Best Green Land Company Limited, I have the technical expertise and leadership skills necessary to succeed in this new venture. My company, Buramzon, will focus on providing high-quality fashion accessories to customers.
+                        </p>                         -->
+                        <p>About me:</p> 
+                        
+                       <!-- <p>Director, The Best Green Land Company Limited (2018-Present)</p> -->
+                        <p>
+                          <ul class="info">
+                            <li class="text-white"> 5+ years of experience in the IT field as a software engineer.</li>
+                            <li class="text-white"> Successfully established and currently serving as a Director of The Best Green Land Company Limited (Management and Finance), a construction company specializing in eco-friendly building solutions.</li>
+                            <li class="text-white"> Founder of Buramzon, a startup company that sells fashion accessories and showcases unique, sustainable designs.</li>
+                          </ul>
+                        </p>
+                     
+                      </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                      <div class="col-lg-12">
+                        <h3 class="personal-infotitle">personal <span>informations</span></h3>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <ul class="about-you ">
+                          <li>
+                            <span class="title">Name :</span>
+                            <span class="value">Kyaw Soe Aung</span>
+                          </li>
+                          <!-- <li>
+                            <span class="title">last name :</span>
+                            <span class="value">Smith</span>
+                          </li> -->
+                          <li>
+                            <span class="title">address :</span>
+                            <span class="value"> Yangon</span>
+                          </li>
+                          <li>
+                            <span class="title">Nationality :</span>
+                            <span class="value">Myanmar</span>
+                          </li>
+                          <!-- <li>
+                            <span class="title">Age :</span>
+                            <span class="value">24 years</span>
+                          </li> -->
+                        </ul>
+                      </div>
+                      <div class="col-lg-6">
+                        <ul class="about-you ">
+                          <li>
+                            <span class="title">E-mail :</span>
+                            <span class="value"><a href="mailto:dev.kyawsoeaung@gmail.com">dev.kyawsoeaung@gmail.com</a></span>
+                          </li>
+                          <li>
+                            <span class="title">Phone :</span>
+                            <span class="value"><a href="tel:+95 9967696966">+95 9967696966</a></span>
+                          </li>
+                          <!-- <li>
+                            <span class="title">skype :</span>
+                            <span class="value">steve.milner</span>
+                          </li> -->
+                          <li>
+                            <span class="title">Langages :</span>
+                            <span class="value">English, Burmese</span>
+                          </li>
+                          <!-- <li>
+                            <span class="title">Freelance :</span>
+                            <span class="value"> Available</span>
+                          </li> -->
+                        </ul>
+                      </div>
+
+                      <div class="col-lg-12">
+                        <div class="About-btn">
+                          <!-- <button id="b1" class="clickbtn download-cv">Download CV <i class="fa fa-download"
+                              aria-hidden="true"></i></button> -->
+                          <!-- Social media icons-->
+                          <div class="col-lg-7 col-sm-6 col-12">
+                            <ul class="list-unstyled social-icons">
+                              <!-- <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li> -->
+                              <li><a href="https://www.facebook.com/kyaw.soeaung.1485"><i class="fab fa-facebook-square"></i></a></li>
+                              <li><a href="https://www.linkedin.com/in/kyaw-soe-aung-31305a15b/"><i class="fab fa-linkedin"></i></a></li>
+                              <li><a href="https://github.com/kyaw-soe-aung"><i class="fab fa-github-square"></i></a></li>
+                              <li><a href="https://www.instagram.com/kyawsoeaung1434/"><i class="fab fa-instagram-square"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- About-Me End -->
+              <!-- Resume section Start -->
+              <div class="resume-section ">
+                <!-- Resume title-->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="section-title animate__animated animate__fadeInUp animate__delay-3s">
+                      <P class="common-desctiption">Check out my Resume</P>
+                      <h1 class="common-title ">my <span>Resume</span></h1>
+                      <div class="animated-bar "></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Resume title End-->
+                <!-- Resume Content -->
+                <div class="row">
+                  <!-- Education part-->
+                  <div class="col-md-6 col-12 ">
+                    <div class=" col-block education ">
+                      <h3 class="about-subtitle">Education</h3>
+                      <div class="resume-item"><span class="item-arrow"></span>
+                        <h5 class="item-title">BACHELOR DEGREE - UNIVERSITY OF COMPUTER STUDIES YANGON</h5><span
+                          class="item-details">UNIVERSITY OF COMPUTER STUDIES YANGON</> 2015 - 2021</span>
+                        <p class="item-description">During the past five years at the University of Computer Science and Technology (UCSY), I have had the opportunity to delve deep into the field of computer science and expand my knowledge and skills in this rapidly evolving discipline.</p>
+                      </div>
+                      <!-- <div class="resume-item"><span class="item-arrow"></span>
+                        <h5 class="item-title">Master of Science in Information Technology</h5><span
+                          class="item-details">Cambridge University / 2007 - 2009</span>
+                        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo
+                          repudiandae.</p>
+                      </div> -->
+                      <!-- <div class="resume-item"><span class="item-arrow"></span>
+                        <h5 class="item-title">Diploma In Web Design</h5><span class="item-details">Cambridge University
+                          /
+                          2009 - 2010</span>
+                        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo
+                          repudiandae.</p>
+                      </div> -->
+                    </div>
+                  </div>
+                  <!-- Experience part-->
+                  <div class="col-md-6 col-12 ">
+                    <div class=" col-block education">
+                      <h3 class="about-subtitle">Experience</h3>
+                      <div class="resume-item"><span class="item-arrow"></span>
+                        <h5 class="item-title">Web Developer</h5><span class="item-details">Myanmar Digital Solutions / 2018 -
+                          2018</span>
+                        <p class="item-description">Working as a web developer at the start-up software company MMDS has been a challenging and rewarding experience. MMDS is a dynamic and fast-paced company that is constantly pushing the boundaries of technology and innovation, and I feel privileged to be a part of this exciting journey.</p>
+                      </div>
+                      <!-- <div class="resume-item"><span class="item-arrow"></span>
+                        <h5 class="item-title">Senior Ui/Ux Designer</h5><span class="item-details">Adobe / 2013 -
+                          2016</span>
+                        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo
+                          repudiandae.</p>
+                      </div> -->
+                      <!-- <div class="resume-item"><span class="item-arrow"></span>
+                        <h5 class="item-title">Junior Ui/Ux Designer</h5><span class="item-details">Google / 2011 -
+                          2013</span>
+                        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo
+                          repudiandae.</p>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Resume ContentEnd -->
+              </div>
+              <!-- / Resume section End-->
+              <!-- Skill Bar Section -->
+              <!-- <div class="skill-section">
+                <div class="row">
+                  <div class="col-12 ">
+                    <div class="section-title animate__animated animate__fadeInUp animate__delay-3s">
+                      <P class="common-desctiption">My level of knowledge in some tools</P>
+                      <h1 class="common-title">my <span>skills</span></h1>
+                      <div class="animated-bar"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 ">
+                    <h3 class="about-subtitle">Design <span>Skills</span></h3>
+                    <div class="skill-bars">
+                      <div class="bar">
+                        <div class="info">
+                          <span>Photoshop</span>
+                        </div>
+                        <div class="progress-line Photoshop">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Illustrator</span>
+                        </div>
+                        <div class="progress-line Illustrator">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Figma</span>
+                        </div>
+                        <div class="progress-line Figma">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Indesign</span>
+                        </div>
+                        <div class="progress-line Indesign">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Sketch</span>
+                        </div>
+                        <div class="progress-line Sketch">
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 ">
+                    <h3 class="about-subtitle">Coding <span>Skills</span></h3>
+                    <div class="skill-bars">
+                      <div class="bar">
+                        <div class="info">
+                          <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>jQuery</span>
+                        </div>
+                        <div class="progress-line jquery">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>MySQL</span>
+                        </div>
+                        <div class="progress-line mysql">
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- / Skill Bar Section -->
+              <!-- service section  -->
+              <div class="services-section text-center ">
+                <!-- <div class="row ">
+                  <div class="col-12">
+                    <div class="section-title  animate__animated animate__fadeInUp animate__slower animate__delay-3s ">
+                      <P class="common-desctiption">Services i offer to my clients</P>
+                      <h1 class="common-title">My <span>Services</span></h1>
+                      <div class="animated-bar"></div>
+                    </div>
+                    <p class="service-text">Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                      Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown
+                      book.
+                    </p>
+                  </div>
+                </div> -->
+                <div class="row animate__animated animate__zoomIn animate__slower animate__delay-3s">
+                  <!-- Single Item -->
+                  <!-- <div
+                    class="col-lg-3 col-sm-6 services-box animate__animated animate__zoomIn animate__slower animate__delay-3s">
+                    <div class="service-item">
+                      <i class="fas fa-laptop-code"></i>
+                      <h4><span class="service-line">web design</span></h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div> -->
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <!-- <div
+                    class="col-lg-3 col-sm-6 services-box animate__animated animate__zoomIn animate__slower animate__delay-3s">
+                    <div class="service-item">
+                      <i class="fas fa-palette"></i>
+                      <h4><span class="service-line">design</span></h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div> -->
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <!-- <div
+                    class="col-lg-3 col-sm-6 services-box animate__animated animate__zoomIn animate__slower animate__delay-3s">
+                    <div class="service-item">
+                      <i class="fas fa-object-ungroup"></i>
+                      <h4><span class="service-line">product design</span></h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div> -->
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <!-- <div
+                    class="col-lg-3 col-sm-6 services-box animate__animated animate__zoomIn animate__slower animate__delay-3s">
+                    <div class="service-item">
+                      <i class="far fa-object-ungroup"></i>
+                      <h4><span class="service-line">UI/UX design</span></h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div> -->
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <!-- <div
+                    class="col-lg-3 col-sm-6 services-box animate__animated animate__zoomIn animate__slower animate__delay-3s">
+                    <div class="service-item">
+                      <i class="fas fa-radiation"></i>
+                      <h4><span class="service-line">animation</span></h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div> -->
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <!-- <div
+                    class="col-lg-3 col-sm-6 services-box animate__animated animate__zoomIn animate__slower animate__delay-3s">
+                    <div class="service-item">
+                      <i class="fas fa-code"></i>
+                      <h4><span class="service-line">web devolopment</span></h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div> -->
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <!-- <div
+                    class="col-lg-3 col-sm-6 services-box animate__animated animate__zoomIn animate__slower animate__delay-3s">
+                    <div class="service-item">
+                      <i class="fas fa-arrows-alt"></i>
+                      <h4><span class="service-line">fully responsive</span></h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div> -->
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <!-- <div
+                    class="col-lg-3 col-sm-6 services-box animate__animated animate__zoomIn animate__slower animate__delay-3s">
+                    <div class="service-item">
+                      <i class="fas fa-dharmachakra"></i>
+                      <h4><span class="service-line">management</span></h4>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div> -->
+                  <!-- End Single Item -->
+                </div>
+              </div>
+              <!-- / service section -->
+              <!-- Testimonials -->
+              <!-- <div class="row">
+                <div class="col-12 animate__animated animate__fadeInDown animate__delay-3s">
+                  <div class="section-title">
+                    <P class="common-desctiption">what our clients say</P>
+                    <h1 class="common-title">My<span>Testimonial</span></h1>
+                    <div class="animated-bar"></div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="row">
+                <div id="testimonial" class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="testimonial-item">
+                      <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                      </div>
+                      <div class="testimonial-img">
+                        <img src="assets/images/profile/glitch.jpg" alt="">
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequatur,
+                        optio dolores aliquid </p>
+                      <div class="rating">
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-item">
+                      <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                      </div>
+                      <div class="testimonial-img">
+                        <img src="assets/images/profile/partical.jpg" alt="">
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequatur,
+                        optio dolores aliquid </p>
+                      <div class="rating">
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-item">
+                      <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                      </div>
+                      <div class="testimonial-img">
+                        <img src="assets/images/profile/me.jpg" alt="">
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequatur,
+                        optio dolores aliquid </p>
+                      <div class="rating">
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-item">
+                      <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                      </div>
+                      <div class="testimonial-img">
+                        <img src="assets/images/profile/water.jpg" alt="">
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequatur,
+                        optio dolores aliquid </p>
+                      <div class="rating">
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-item">
+                      <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                      </div>
+                      <div class="testimonial-img">
+                        <img src="assets/images/profile/wrap.jpg" alt="">
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequatur,
+                        optio dolores aliquid </p>
+                      <div class="rating">
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                        <i class="fas fa-3x fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!--End Testimonials section -->
+              <!-- Fun Fact Section -->
+              <!-- <div class="funfacts-section">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="section-title">
+                      <P class="common-desctiption">This are my strongest sides</P>
+                      <h1 class="common-title">fun <span>facts</span></h1>
+                      <div class="animated-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                    <div class="funfacts-box">
+                      <h3 class="counter" data-to="10" data-time="10000">0</h3>
+                      <p class="fun-text">years of <span>experience</span></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="funfacts-box">
+                      <h3 class="counter" data-to="499" data-time="100000">0</h3>
+                      <p class="fun-text">happy Clients</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="funfacts-box">
+                      <h3 class="counter" data-to="101" data-time="100000">0</h3>
+                      <p class="fun-text">completed projects</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="funfacts-box">
+                      <h3 class="counter" data-to="20" data-time="10000">0</h3>
+                      <p class="fun-text">awards win</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
+
+      <!-- Protfolio Section Start-->
+      <section id="portfolio" class="section">
+        <div class="homecolor-box"></div>
+        <div class="common_bg animate__animated animate__fadeInLeft">
+          <div class="container">
+            <div class="protfolio-section text-center  ">
+              <!-- Protfolio-Title Start -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="section-title animate__animated animate__fadeInDown animate__delay-1s">
+                    <P class="common-desctiption">Showcasing some of my best work</P>
+                    <h1 class="common-title">My <span>Gallery</span></h1>
+                    <div class="animated-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Protfolio-Title Start -->
+              <!-- Protfolio nav-button start  -->
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="portfolio-menu animate__animated animate__fadeInUp animate__delay-2s">
+                    <nav class="controls ">
+                      <button type="button" class="control clickbtn" data-filter="all">All</button>
+                      <button type="button" class="control clickbtn"
+                        data-filter=".webdevelopment ">Work</button>
+                      <button type="button" class="control clickbtn" data-filter=".with_friends ">With Friends</button>
+                      <button type="button" class="control clickbtn" data-filter=".trips ">Trips</button>
+                      <button type="button" class="control clickbtn" data-filter=".uiuxdesign">Moods</button>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <!-- Protfolio nav-button End  -->
+              <!-- Portfolio Mix Content Start -->
+              <div class="row portfolio-list animate__zoomIn animate__animated animate__delay-3s">
+                <div class="container">
+                  <ul class="row ps-0">
+                    <!-- Mix Content-Box -->
+                    <!-- <li class="mix webdevelopment col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/protfolio/item-1.jpg"
+                        data-caption="Web Development" data-size="1200x600">
+                        <img src="assets/images/protfolio/item-1.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Web Develoment</h3>
+                          <span class="post">project</span>
+                        </div>
+                      </a>
+                    </li> -->
+                    <!-- Mix Content-Box -->
+                    <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/p1.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/p1.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Malaysia</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Mix Content Box -->
+                    <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/p2.jpg" data-caption="UI-UX Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/p2.jpg" alt="Image description" />
+                        <div class="info">
+                          <!-- <h3 class="title">UI-UX Design</h3> -->
+                          <span class="post">Malaysia</span>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Mix Content Box -->
+                    <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/p3.jpg"
+                        data-caption="Web Development" data-size="1200x600">
+                        <img src="assets/images/with-friends/p3.jpg" alt="Image description" />
+                        <div class="info">
+                          <!-- <h3 class="title">Web Develoment</h3> -->
+                          <span class="post">Malaysia</span>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Mix Content Box -->
+                    <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/p4.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/p4.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Malaysia</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img1.JPG" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img1.JPG" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img2.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img2.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img3.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img3.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img4.JPG" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img4.JPG" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img5.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img5.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img6.jpeg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img6.jpeg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img7.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img7.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img8.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img8.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img9.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img9.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img10.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img10.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img11.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img11.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+
+                     <!-- Mix Content Box -->
+                     <li class="mix with_friends col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/with-friends/img12.jpg" data-caption="Web Design"
+                        data-size="1200x600">
+                        <img src="assets/images/with-friends/img12.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Yangon</h3>
+                          <!-- <span class="post">project</span> -->
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Mix Content Box -->
+                    <li class="trips col-xl-3 col-lg-4 col-md-6">
+                      <a title="" href="malaysia.html">
+                        <img src="assets/images/trips/malaysia/img56.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Malaysia Album</h3>
+                          <span class="post"><a href="malaysia.html"></a></span>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Mix Content Box -->
+                    <li class="mix uiuxdesign col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/protfolio/item-7.jpg" data-caption="UI-UX Design"
+                        data-size="1200x600">
+                        <img src="assets/images/protfolio/item-7.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">UI-UX Design</h3>
+                          <span class="post">project</span>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Mix Content Box -->
+                    <!-- <li class="mix graphic col-xl-3 col-lg-4 col-md-6">
+                      <a title="click to zoom-in" href="assets/images/protfolio/item-8.jpg"
+                        data-caption="Graphic Design" data-size="1200x600">
+                        <img src="assets/images/protfolio/item-8.jpg" alt="Image description" />
+                        <div class="info">
+                          <h3 class="title">Graphic Design</h3>
+                          <span class="post">project</span>
+                        </div>
+                      </a>
+                    </li> -->
+                    <!-- Mix Content Box -->
+                  </ul>
+                </div>
+              </div>
+              <!-- Portfolio Mix Content End -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Protfolio Section End -->
+
+      <!-- Blog section Start -->
+      <section id="blog" class="section">
+        <div class="homecolor-box"></div>
+        <div class="common_bg animate__animated animate__fadeInDown" >
+          <div class="container">
+            <!-- Blog-Section Title -->
+            <div class="blog-section text-center">
+              <div class="row ">
+                <div class="col-12">
+                  <div class="section-title animate__animated animate__bounceInDown animate__delay-1s">
+                    <P class="common-desctiption">Check out my latest blog posts</P>
+                    <h1 class="common-title">My <span>blog</span></h1>
+                    <div class="animated-bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Blog-Section Title End -->
+            <!-- Blog-Content Box Start -->
+            <div class="blog-section animate__animated animate__fadeInUp animate__delay-2s">
+              <div class="row justify-content-center">
+                <!-- Single post-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="single-post">
+                    <div class="ih-item square effect ">
+                      <a href="blog-page.html">
+                        <div class="img"><img src="assets/images/blog/01.jpg" alt="img"></div>
+                      </a>
+                    </div>
+                    <div class="card-body post-content">
+                      <div class="content-date">10 Dec, 2021</div>
+                      <div class="content-title">
+                        <h5><a href="blog-page.html">Women in Web Design: How To Achieve Success</a></h5>
+                      </div>
+                      <div class="content-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single post-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="single-post">
+                    <div class="ih-item square effect ">
+                      <a href="blog-page.html">
+                        <div class="img"><img src="assets/images/blog/02.jpg" alt="img"></div>
+                      </a>
+                    </div>
+                    <div class="card-body post-content">
+                      <div class="content-date">13 Dec, 2021</div>
+                      <div class="content-title">
+                        <h5><a href="blog-page.html">The Services provide for designs</a></h5>
+                      </div>
+                      <div class="content-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single post-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class=" single-post">
+                    <div class="ih-item square effect ">
+                      <a href="blog-page.html">
+                        <div class="img"><img src="assets/images/blog/03.jpg" alt="img"></div>
+                      </a>
+                    </div>
+                    <div class="card-body post-content">
+                      <div class="content-date">10 Dec, 2021</div>
+                      <div class="content-title">
+                        <h5><a href="blog-page.html">mobile app landing design & app maintain</a></h5>
+                      </div>
+                      <div class="content-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single post-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="single-post">
+                    <div class="ih-item square effect ">
+                      <a href="blog-page.html">
+                        <div class="img"><img src="assets/images/blog/04.jpg" alt="img"></div>
+                      </a>
+                    </div>
+                    <div class="card-body post-content">
+                      <div class="content-date">10 Dec, 2021</div>
+                      <div class="content-title">
+                        <h5><a href="blog-page.html">How to Work Better: Efficiency Tools Every Logo Designer Needs</a>
+                        </h5>
+                      </div>
+                      <div class="content-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single post-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="single-post">
+                    <div class="ih-item square effect ">
+                      <a href="blog-page.html">
+                        <div class="img"><img src="assets/images/blog/05.jpg" alt="img"></div>
+                      </a>
+                    </div>
+                    <div class="card-body post-content">
+                      <div class="content-date">10 Dec, 2021</div>
+                      <div class="content-title">
+                        <h5><a href="blog-page.html">Why can Hill Planet help you in the development of your
+                            website?</a>
+                        </h5>
+                      </div>
+                      <div class="content-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single post-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="single-post">
+                    <div class="ih-item square effect ">
+                      <a href="blog-page.html">
+                        <div class="img"><img src="assets/images/blog/06.jpg" alt="img"></div>
+                      </a>
+                    </div>
+                    <div class="card-body post-content">
+                      <div class="content-date">10 Dec, 2021</div>
+                      <div class="content-title">
+                        <h5><a href="blog-page.html">30 Beautiful Google Fonts for Your Website</a></h5>
+                      </div>
+                      <div class="content-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                          Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Blog-Content Box End -->
+          </div>
+        </div>
+      </section>
+      <!-- Blog section End -->
+
+      <!-- Contact section Start -->
+      <section id="contact" class="section">
+        <div class="homecolor-box"></div>
+        <div class="common_bg animate__animated animate__zoomIn">
+          <div class="container">
+            <!-- Contact-page Start -->
+            <div class="contact-section">
+              <!-- Contact-Section Title -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="section-title animate__animated animate__fadeInDown animate__delay-1s">
+                    <P class="common-desctiption">Feel free to contact me anytimes</P>
+                    <h1 class="common-title">my <span>contact</span></h1>
+                    <div class="animated-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Contact-Section Title End-->
+              <!-- Contact Form Start -->
+              <div class="contact-section">
+                <div class="row">
+                  <!-- Contact form -->
+                  <div class="col-lg-7 col-12 ">
+                    <form class="contact-form animate__animated animate__fadeInLeft animate__delay-2s"
+                      id="contact-form">
+                      <h4 class="content-title">contact me</h4>
+                      <div class="row">
+                        <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-name"
+                            type="text" name="name" placeholder="Name" required=""></div>
+                        <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-email"
+                            type="email" name="email" placeholder="Email" required=""></div>
+                        <div class="col-12 form-group"><input class="form-control" id="contact-subject" type="text"
+                            name="subject" placeholder="Subject" required=""></div>
+                        <div class="col-12 form-group form-message"><textarea class="form-control" id="contact-message"
+                            name="message" placeholder="Message" rows="5" required=""></textarea></div>
+                        <div class="col-12 mb-4 form-submit"><button class="clickbtn button-main button-scheme"
+                            id="contact-submit" type="submit">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Contact form End -->
+                  <!-- Contact info -->
+                  <div class="col-lg-5 col-12 ">
+                    <div class="contact-info animate__animated animate__fadeInRight animate__delay-3s">
+                      <h4 class="content-title">Contact Info</h4>
+                      <p class="info-description">Always available for freelance work if the right project comes along,
+                        Feel free to contact me!</p>
+                      <ul class="list-unstyled list-info" style="display: inline-grid">
+                        <li>
+                          <div class="media d-flex align-items-center"><span class="info-icon"><i
+                                class="fas fa-user-alt"></i></span>
+                            <div class="media-body info-details">
+                              <h6 class="info-type">Name</h6><span class="info-value">Kyaw Soe Aung</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="media d-flex align-items-center"><span class="info-icon"><i
+                                class="fas fa-map-pin"></i></span>
+                            <div class="media-body info-details">
+                              <h6 class="info-type">Location</h6><span class="info-value">Yangon, Myanmar</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="media d-flex align-items-center"><span class="info-icon"><i
+                                class="fas fa-phone-alt"></i></span>
+                            <div class="media-body info-details">
+                              <h6 class="info-type">Call Me</h6><span class="info-value"><a href="tel:+441632967704">+959967696966</a></span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="media d-flex align-items-center"><span class="info-icon"><i
+                                class="fas fa-envelope"></i></span>
+                            <div class="media-body info-details">
+                              <h6 class="info-type">Email Me</h6><span class="info-value"><a
+                                  href="mailto:dev.kyawsoeaung@gmail.com">dev.kyawsoeaung@gmail.com</a></span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Social media icons-->
+                    <div class="fixed-block d-flex animate__animated animate__jackInTheBox animate__delay-3s">
+                      <ul class="list-unstyled social-icons p-3">
+                      <li><a href="https://www.facebook.com/kyaw.soeaung.1485/"><i class="fab fa-facebook-square "></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/kyaw-soe-aung-31305a15b/"><i class="fab fa-linkedin "></i></a></li>
+                      <li><a href="https://github.com/kyaw-soe-aung"><i class="fab fa-github-square "></i></a></li>
+                      <li><a href="https://www.instagram.com/kyawsoeaung1434/"><i class="fab fa-instagram-square"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Contact info End -->
+                </div>
+              </div>
+              <!-- map -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="map animate__animated animate__fadeInRight animate__delay-4s">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14780.921343429016!2d96.16046153771806!3d16.790038908886128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec952b6ead79%3A0xc12e80f078502a06!2sMingala%20Taungnyunt%20Township%2C%20Yangon!5e0!3m2!1sen!2smm!4v1676383295011!5m2!1sen!2smm" 
+                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <!-- <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19845.82732713224!2d-0.3162034543774074!3d51.55487883052924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876116207a6d0bd:0xaf7016a2cadb21e4!2sWembley,%20UK!5e0!3m2!1sen!2sin!4v1645179715804!5m2!1sen!2sin"
+                      style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                  </div>
+                </div>
+              </div>
+              <!-- map end -->
+              <!-- Contact-Footer -->
+              <div class="row justify-content-center animate__animated animate__fadeInUp animate__delay-5s">
+                <div class="col-lg-6 text-center">
+                  <h5 class="footer">Copyright&copy; &#160;<script>
+                      document.write(new Date().getFullYear())
+                    </script><a> Kyaw Soe Aung</a>&#160;&#160;<i
+                      class="fas fa-heart animate__animated animate__pulse animate__faster animate__infinite	infinite"></i>&#160;&#160;All
+                    rigths reserved</h5>
+                </div>
+              </div>
+              <!-- Contact-Footer End -->
+            </div>
+            <!-- Contact-page End -->
+          </div>
+        </div>
+      </section>
+      <!-- Contact section End -->
+
+    </div>
+    <!-- section-part End-->
+    <!-- Mouse-Cursor -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <!-- Mouse-Cursor End-->
+  </div>
+  <!-- Body Part End -->
+
+  <!-- Optional JavaScript -->
+  <!-- Jquery Js -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Jquery FancyBox Js -->
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <!-- Mixitup Js -->
+  <script src="assets/js/mixitup.min.js"></script>
+  <!-- Owlcarousel Js -->
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <!-- Jquery Countdown Js -->
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <!-- Wow Js -->
+  <script src="assets/js/wow.min.js"></script>
+  <!-- colors JS -->
+  <script src="assets/js/color.js"></script>
+  <!-- Style.switch JS -->
+  <script src="assets/js/style.switch.js"></script>
+  <!-- Custom Js -->
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
